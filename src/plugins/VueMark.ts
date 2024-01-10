@@ -1,7 +1,7 @@
 import type { App, Plugin } from 'vue';
 import type { VueMarkOptions, VueMarkPluginItem } from '@/types';
 
-import getVMark, { vMark } from '@/directives/VMark';
+import vMark, { getVMark } from '@/directives/VMark';
 
 export type {
   VueMarkOptions,

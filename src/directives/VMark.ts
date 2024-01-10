@@ -8,7 +8,10 @@ import type { VueMarkOptions, VueMarkPluginItem } from '@/types';
  * @param plugins The plugins to add to markdown-it.
  * @returns A v-mark directive.
  */
-function getVMark(options: VueMarkOptions = {}, plugins: VueMarkPluginItem[] = []): Directive {
+export function getVMark(
+  options: VueMarkOptions = {},
+  plugins: VueMarkPluginItem[] = []
+): Directive {
   const md = markdownit(options);
 
   for (const plugin of plugins) {
@@ -42,6 +45,6 @@ function getVMark(options: VueMarkOptions = {}, plugins: VueMarkPluginItem[] = [
 /**
  * A default vMark directive, without any plugin or custom option specified.
  */
-export const vMark = getVMark();
+const vMark = getVMark();
 
-export default getVMark;
+export default vMark;
