@@ -20,7 +20,13 @@ const vMark = getVMark(options, plugins);
   <div class="render-markdown">
     <h1>{{ title }}</h1>
     <span v-mark="reactiveMarkdown"></span>
-    <textarea type="text" label="Markdown" placeholder="Markdown" v-model="reactiveMarkdown" v-if="reactive" />
+    <textarea
+      type="text"
+      label="Markdown"
+      placeholder="Markdown"
+      v-model="reactiveMarkdown"
+      v-if="reactive"
+    />
   </div>
 </template>
 
@@ -34,12 +40,12 @@ const vMark = getVMark(options, plugins);
   align-items: center;
 }
 
-.render-markdown>h1 {
+.render-markdown > h1 {
   margin-bottom: 1rem;
   white-space: nowrap;
 }
 
-.render-markdown>span {
+.render-markdown > span {
   width: 100%;
   height: 100%;
 
@@ -48,7 +54,7 @@ const vMark = getVMark(options, plugins);
   border-radius: 15px;
 }
 
-.render-markdown>textarea {
+.render-markdown > textarea {
   width: 100%;
   margin-top: 10px;
 

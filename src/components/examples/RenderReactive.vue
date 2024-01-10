@@ -7,6 +7,11 @@ defineProps<{
 </script>
 
 <template>
-  <RenderMarkdown class="md" title="Markdown - reactive" :markdown="markdown" :options="{ linkify: true, breaks: true }"
-    reactive />
+  <RenderMarkdown
+    class="md"
+    title="Markdown - reactive"
+    :markdown="markdown"
+    :options="{ linkify: true, breaks: true }"
+    reactive
+  />
 </template>
