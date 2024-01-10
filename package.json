@@ -1,6 +1,6 @@
 {
   "name": "@eubereveloper/vuemark",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "A lightweight Vue directive to render markdown, by using markdown-it",
   "keywords": [
@@ -13,7 +13,7 @@
   "author": "Eugenio Berretta <euberdeveloper@gmail.com>",
   "main": "dist/vuemark.cjs",
   "module": "dist/vuemark.js",
-  "types": "dist/vuemark.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
