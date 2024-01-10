@@ -20,5 +20,5 @@ jobs:
       - name: Install node dependencies
         run: npm install
         
-      - name: Transpile code
+      - name: Test code
         run: npm run test:unit
