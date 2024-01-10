@@ -1,0 +1,12 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["src/index.ts", "src/types/**/*", "src/plugins/**/*", "src/directives/**/*"],
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
