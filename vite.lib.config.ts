@@ -9,6 +9,9 @@ export default defineConfig({
       entry: './src/index.ts',
       formats: ['cjs', 'es', 'umd'],
       name: 'VueMark'
+    },
+    rollupOptions: {
+      external: [/node_modules/],
     }
   },
   plugins: [
