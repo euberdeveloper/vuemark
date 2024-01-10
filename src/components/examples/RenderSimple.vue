@@ -7,5 +7,5 @@ defineProps<{
 </script>
 
 <template>
-  <RenderMarkdown class="md" title="Markdown -simple" :markdown="markdown" />
+  <RenderMarkdown class="md" title="Markdown - simple" :markdown="markdown" />
 </template>

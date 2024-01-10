@@ -24,7 +24,7 @@ const emojiPlugin: VueMarkPluginWithOptionsItem<EmojiOptions> = {
 <template>
   <RenderMarkdown
     class="md"
-    title="Markdown -emoji"
+    title="Markdown - emoji"
     :markdown="markdown"
     :options="{ linkify: true, breaks: true }"
     :plugins="[emojiPlugin]"

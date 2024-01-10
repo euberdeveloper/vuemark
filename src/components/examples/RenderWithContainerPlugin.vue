@@ -33,7 +33,7 @@ const containerPlugin: VueMarkPluginWithParamsItem = {
 <template>
   <RenderMarkdown
     class="md"
-    title="Markdown -container"
+    title="Markdown - container"
     :markdown="markdown"
     :options="{ linkify: true, breaks: true }"
     :plugins="[containerPlugin]"

@@ -23,7 +23,7 @@ const subPlugin: VueMarkPluginSimpleItem = {
 <template>
   <RenderMarkdown
     class="md"
-    title="Markdown -sub/sup"
+    title="Markdown - sub/sup"
     :markdown="markdown"
     :options="{ linkify: true, breaks: true }"
     :plugins="[supPlugin, subPlugin]"

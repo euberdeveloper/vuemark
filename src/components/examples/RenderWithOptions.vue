@@ -9,7 +9,7 @@ defineProps<{
 <template>
   <RenderMarkdown
     class="md"
-    title="Markdown -options"
+    title="Markdown - options"
     :markdown="markdown"
     :options="{ linkify: true, breaks: true }"
   />
