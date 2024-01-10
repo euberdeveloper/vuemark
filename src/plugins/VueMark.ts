@@ -22,7 +22,7 @@ export type VueMarkPluginOptions = {
 };
 
 const defaultOptions: Required<VueMarkPluginOptions> = {
-  directiveName: 'v-mark',
+  directiveName: 'mark',
   markdownItOptions: {},
   plugins: []
 };
