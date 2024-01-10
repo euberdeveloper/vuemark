@@ -32,7 +32,7 @@ function mergeOptions(options: VueMarkPluginOptions): Required<VueMarkPluginOpti
   return Object.assign({}, defaultOptions, options);
 }
 
-export default {
+export const VueMark = {
   install(Vue: App, options: VueMarkPluginOptions = {}): void {
     const opts = mergeOptions(options);
     Vue.directive(opts.directiveName, getVMark(opts.markdownItOptions, opts.plugins));
