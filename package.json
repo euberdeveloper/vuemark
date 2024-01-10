@@ -15,10 +15,10 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@types/markdown-it": "^13.0.7",
     "markdown-it": "^14.0.0",
-    "vue": "^3.3.11"
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.3.3",
