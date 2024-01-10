@@ -1,11 +1,11 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it, expect } from 'vitest';
 
-import { mount } from '@vue/test-utils'
-import HelloWorld from '../HelloWorld.vue'
+import { mount } from '@vue/test-utils';
+import RenderMarkdown from '@/components/RenderMarkdown.vue';
 
-describe('HelloWorld', () => {
+describe('RenderMarkdown', () => {
   it('renders properly', () => {
-    const wrapper = mount(HelloWorld, { props: { msg: 'Hello Vitest' } })
-    expect(wrapper.text()).toContain('Hello Vitest')
-  })
-})
+    const wrapper = mount(RenderMarkdown);
+    expect(wrapper.text()).toContain('pippo');
+  });
+});
