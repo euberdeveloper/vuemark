@@ -1,6 +1,6 @@
 {
   "name": "@eubereveloper/vuemark",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "description": "A lightweight Vue directive to render markdown, by using markdown-it",
   "keywords": [
@@ -20,6 +20,7 @@
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
+    "prebuild:lib": "shx rm -rf dist",
     "build:lib": "run-p type-check \"build-only-lib {@}\" --",
     "preview": "vite preview",
     "test:unit": "vitest",
@@ -30,7 +31,8 @@
     "postbuild-only-lib": "shx rm -rf dist/*.ico",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "prepublishOnly": "npm run build:lib"
   },
   "peerDependencies": {
     "@types/markdown-it": "^13.0.7",

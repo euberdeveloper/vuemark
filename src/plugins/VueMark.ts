@@ -10,7 +10,6 @@ export type {
   VueMarkPluginWithOptionsItem,
   VueMarkPluginWithParamsItem
 } from '@/types';
-export { getVMark, vMark };
 
 /** The options to pass to the VueMark plugin */
 export type VueMarkPluginOptions = {
@@ -32,9 +31,12 @@ function mergeOptions(options: VueMarkPluginOptions): Required<VueMarkPluginOpti
   return Object.assign({}, defaultOptions, options);
 }
 
-export const VueMark = {
+const VueMark = {
   install(Vue: App, options: VueMarkPluginOptions = {}): void {
     const opts = mergeOptions(options);
     Vue.directive(opts.directiveName, getVMark(opts.markdownItOptions, opts.plugins));
   }
 } as Plugin;
+
+export { getVMark, vMark, VueMark };
+
