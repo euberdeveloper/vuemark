@@ -11,7 +11,7 @@ export default defineConfig({
       name: 'VueMark'
     },
     rollupOptions: {
-      external: [/node_modules/],
+      // external: [/node_modules/],
     }
   },
   plugins: [

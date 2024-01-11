@@ -1,6 +1,6 @@
 {
   "name": "@eubereveloper/vuemark",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "type": "module",
   "description": "A lightweight Vue directive to render markdown, by using markdown-it",
   "keywords": [
